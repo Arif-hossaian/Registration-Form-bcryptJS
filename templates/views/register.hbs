@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+</head>
+
+<body>
+    {{>navbar}}
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <div class=" register-right">
+                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active " id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true"> Registration </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false"> Instruction </a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h3 class="text-center register-heading mt-4">Registration Form</h3>
+                            <p class="text-center mt-4">Plz visit the Instruction section at the top of right side. That wiil be helpful for you to fill up this page 👆.</p>
+                            <form action="/register" method="POST">
+                                <div class="row register-form">
+                                    <div class="col-md-6 ">
+
+                                        <div class="form-group mt-5">
+                                            <input type="text" class="form-control" placeholder="First name" value=""
+                                                name="firstname" required>
+                                        </div>
+
+
+                                        <div class="form-group mt-5">
+                                            <input type="email" class="form-control" placeholder="Email address"
+                                                value="" name="email" required>
+                                        </div>
+                                        <div class="form-group mt-5">
+                                            <input type="text" minlength="11" maxlength="11" class="form-control"
+                                                placeholder="Your phone" value="" name="phone" required>
+                                        </div>
+                                        <div class="form-group mt-5">
+                                            <input type="password" class="form-control" placeholder=" Enter Password"
+                                                value="" name="password" required>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-md-6">
+
+                                        <div class="form-group mt-5">
+                                            <input type="text" class="form-control" placeholder="Last name" value=""
+                                                name="lastname" required>
+                                        </div>
+
+
+                                        <div class="form-group mt-5">
+                                            <div class="maxl">
+                                                <label class="radio inline">
+                                                    <input type="radio" name="gender" value="male" checked required>
+                                                    <span>Male</span>
+                                                </label>
+                                                <label class="radio inline">
+                                                    <input type="radio" name="gender" value="female">
+                                                    <span>Female</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group mt-5">
+                                            <input type="text" minlength="2" maxlength="2" class="form-control"
+                                                placeholder="Enter Your Age" value="" name="age" required>
+                                        </div>
+                                        <div class="form-group mt-5">
+                                            <input type="password" class="form-control" placeholder=" Confirm Password"
+                                                value="" name="confirmpassword" required>
+                                        </div>
+
+                                        <input type="submit" class="btnRegister btn btn-info px-5 py-2 mt-4 mb-3" value="Register">
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                       
+                       {{!-- Login page --}}
+
+                        <div class="tab-pane fade show " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <h3 class="text-center register-heading mt-4">Instruction</h3>
+                            <div class="row register-form">
+                                <div class="col-md-12">
+                                 
+                                 <h5 class="mt-4">*1. Fiil up this Registration form if you have not registered yet. After Registration Go to the Login page and Sign in there which Email and password you entered at the register-form. So plz remember which was that. </h5>
+
+
+                                 <h5 class="mt-5">*2. At the register-form (Email and Phone number) should be Unique. This means you can not reuse the same Email and Phone number again for Registration. If you use same then You will get Error... So please be Carefull. </h5>
+
+
+                                 <h5 class="mt-5">*3. Phone number should be less then 10. Otherwise You will get Error.</h5>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+</head>
+
+<body>
+    {{>navbar}}
+
+
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!-- left-side-div -->
+
+                    <div class="col-md-6 col-12 main_header_right align-item-center">
+                        <figure>
+                            <img src="images/facbook2.jpg" alt="Arif" class="img-fluid mt-5" title="Arif Hossain">
+                        </figure>
+                    </div>
+
+                    <div class="col-md-6 col-12 main_header_left">
+                        <h3>Welcome to My Dynamic Tech side.</h3>
+                        <h1>I am Arif and i am a <span class="text_clr"> FullStack Developer </span> </h1>
+                        <p class="mt-4">To learn about the Roadmap of <span class="text_clr">Back-End</span> I am here
+                            to help you. So Click that below button for registration....Thank You</p>
+                        {{!-- <button type="button"
+                                class="btn btn-info">About Me</button> --}}
+                        <form action="/register">
+                            <input type="submit" class="btnRegister btn-info px-5 py-3" value="Click this"></form>
+                    </div>
+                    <!-- right-side-div -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>

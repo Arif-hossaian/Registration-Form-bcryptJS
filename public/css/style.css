@@ -1,0 +1,32 @@
+body{background-color:#F1F1F1;}
+
+
+.image_div{
+    height: 100;
+    width: 100%;
+}
+
+.register-form{
+
+    background-color: #DAEDF6 ;
+}
+
+
+
+.main_header_right figure img{
+    filter: drop-shadow(0 0.5rem 1rem rgba(0,0,0,0.3));
+}
+
+.main_header_left{
+    height: 34rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.text_clr{
+    color: #0097e6;
+}
+
